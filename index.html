@@ -27,189 +27,234 @@
 
         <section id="conjugations">
             <h2>Verbbøjninger i Nutid</h2>
-            
-            <div class="verb-table">
-                <h3>-AR Verber (Eksempel: "nadar")</h3>
-                <table>
-                    <tr>
-                        <th>Person</th>
-                        <th>Bøjning</th>
-                    </tr>
-                    <tr>
-                        <td>Yo</td>
-                        <td>nado</td>
-                    </tr>
-                    <tr>
-                        <td>Tú</td>
-                        <td>nadas</td>
-                    </tr>
-                    <tr>
-                        <td>Él/Ella/Usted</td>
-                        <td>nada</td>
-                    </tr>
-                    <tr>
-                        <td>Nosotros/Nosotras</td>
-                        <td>nadamos</td>
-                    </tr>
-                    <tr>
-                        <td>Vosotros/Vosotras</td>
-                        <td>nadáis</td>
-                    </tr>
-                    <tr>
-                        <td>Ellos/Ellas/Ustedes</td>
-                        <td>nadan</td>
-                    </tr>
-                </table>
+            <h3>-AR Verber (Eksempel: "nadar")</h3>
+            <ul>
+                <li>Yo: nado</li>
+                <li>Tú: nadas</li>
+                <li>Él/Ella/Usted: nada</li>
+                <li>Nosotros/Nosotras: nadamos</li>
+                <li>Vosotros/Vosotras: nadáis</li>
+                <li>Ellos/Ellas/Ustedes: nadan</li>
+            </ul>
+
+            <h3>-ER Verber (Eksempel: "leer")</h3>
+            <ul>
+                <li>Yo: leo</li>
+                <li>Tú: lees</li>
+                <li>Él/Ella/Usted: lee</li>
+                <li>Nosotros/Nosotras: leemos</li>
+                <li>Vosotros/Vosotras: leéis</li>
+                <li>Ellos/Ellas/Ustedes: leen</li>
+            </ul>
+
+            <h3>-IR Verber (Eksempel: "vivir")</h3>
+            <ul>
+                <li>Yo: vivo</li>
+                <li>Tú: vives</li>
+                <li>Él/Ella/Usted: vive</li>
+                <li>Nosotros/Nosotras: vivimos</li>
+                <li>Vosotros/Vosotras: vivís</li>
+                <li>Ellos/Ellas/Ustedes: viven</li>
+            </ul>
+
+            <h3>Diftongerende Verber</h3>
+            <ul>
+                <li><strong>Pensar (e → ie):</strong> Yo pienso, Tú piensas, Él/Ella/Usted piensa, Nosotros/Nosotras pensamos, Vosotros/Vosotras pensáis, Ellos/Ellas/Ustedes piensan</li>
+                <li><strong>Querer (e → ie):</strong> Yo quiero, Tú quieres, Él/Ella/Usted quiere, Nosotros/Nosotras queremos, Vosotros/Vosotras queréis, Ellos/Ellas/Ustedes quieren</li>
+                <li><strong>Preferir (e → ie):</strong> Yo prefiero, Tú prefieres, Él/Ella/Usted prefiere, Nosotros/Nosotras preferimos, Vosotros/Vosotras preferís, Ellos/Ellas/Ustedes prefieren</li>
+                <li><strong>Poder (o → ue):</strong> Yo puedo, Tú puedes, Él/Ella/Usted puede, Nosotros/Nosotras podemos, Vosotros/Vosotras podéis, Ellos/Ellas/Ustedes pueden</li>
+                <li><strong>Dormir (o → ue):</strong> Yo duermo, Tú duermes, Él/Ella/Usted duerme, Nosotros/Nosotras dormimos, Vosotros/Vosotras dormís, Ellos/Ellas/Ustedes duermen</li>
+                <li><strong>Volver (o → ue):</strong> Yo vuelvo, Tú vuelves, Él/Ella/Usted vuelve, Nosotros/Nosotras volvemos, Vosotros/Vosotras volvéis, Ellos/Ellas/Ustedes vuelven</li>
+                <li><strong>Pedir (e → i):</strong> Yo pido, Tú pides, Él/Ella/Usted pide, Nosotros/Nosotras pedimos, Vosotros/Vosotras pedís, Ellos/Ellas/Ustedes piden</li>
+                <li><strong>Jugar (u → ue):</strong> Yo juego, Tú juegas, Él/Ella/Usted juega, Nosotros/Nosotras jugamos, Vosotros/Vosotras jugáis, Ellos/Ellas/Ustedes juegan</li>
+            </ul>
+        </section>
+
+        <section id="exercises">
+            <h2>Øvelser</h2>
+
+            <div class="exercise">
+                <h3>Øvelse 1: -AR, -ER eller -IR Verber</h3>
+                <p>For hver sætning, identificér hvilken gruppe verbet tilhører, og bøj det korrekt i nutid.</p>
+                <div>
+                    <label for="exercise1-1">(nadar) Yo __________ en la piscina todos los días.</label>
+                    <input type="text" id="exercise1-1" class="input" data-answer="nado">
+                    <button onclick="checkAnswer('exercise1-1')">Tjek</button>
+                    <span id="feedback-exercise1-1"></span>
+                    <p class="translation">*(Jeg svømmer i poolen hver dag.)*</p>
+                </div>
+                <div>
+                    <label for="exercise1-2">(leer) Nosotros __________ un libro interesante sobre la historia.</label>
+                    <input type="text" id="exercise1-2" class="input" data-answer="leemos">
+                    <button onclick="checkAnswer('exercise1-2')">Tjek</button>
+                    <span id="feedback-exercise1-2"></span>
+                    <p class="translation">*(Vi læser en interessant bog om historie.)*</p>
+                </div>
+                <div>
+                    <label for="exercise1-3">(vivir) Ellos __________ en una casa grande cerca del mar.</label>
+                    <input type="text" id="exercise1-3" class="input" data-answer="viven">
+                    <button onclick="checkAnswer('exercise1-3')">Tjek</button>
+                    <span id="feedback-exercise1-3"></span>
+                    <p class="translation">*(De bor i et stort hus tæt på havet.)*</p>
+                </div>
+                <div>
+                    <label for="exercise1-4">(escribir) Tú __________ un correo electrónico a tu profesor.</label>
+                    <input type="text" id="exercise1-4" class="input" data-answer="escribes">
+                    <button onclick="checkAnswer('exercise1-4')">Tjek</button>
+                    <span id="feedback-exercise1-4"></span>
+                    <p class="translation">*(Du skriver en e-mail til din lærer.)*</p>
+                </div>
+                <div>
+                    <label for="exercise1-5">(aprender) Ella __________ español con sus amigos.</label>
+                    <input type="text" id="exercise1-5" class="input" data-answer="aprende">
+                    <button onclick="checkAnswer('exercise1-5')">Tjek</button>
+                    <span id="feedback-exercise1-5"></span>
+                    <p class="translation">*(Hun lærer spansk med sine venner.)*</p>
+                </div>
+                <div>
+                    <label for="exercise1-6">(abrir) Nosotros __________ las ventanas cuando hace calor.</label>
+                    <input type="text" id="exercise1-6" class="input" data-answer="abrimos">
+                    <button onclick="checkAnswer('exercise1-6')">Tjek</button>
+                    <span id="feedback-exercise1-6"></span>
+                    <p class="translation">*(Vi åbner vinduerne, når det er varmt.)*</p>
+                </div>
+                <div>
+                    <label for="exercise1-7">(ver) Vosotros __________ una película todos los viernes.</label>
+                    <input type="text" id="exercise1-7" class="input" data-answer="veis">
+                    <button onclick="checkAnswer('exercise1-7')">Tjek</button>
+                    <span id="feedback-exercise1-7"></span>
+                    <p class="translation">*(I ser en film hver fredag.)*</p>
+                </div>
             </div>
 
-            <div class="verb-table">
-                <h3>-ER Verber (Eksempel: "leer")</h3>
-                <table>
-                    <tr>
-                        <th>Person</th>
-                        <th>Bøjning</th>
-                    </tr>
-                    <tr>
-                        <td>Yo</td>
-                        <td>leo</td>
-                    </tr>
-                    <tr>
-                        <td>Tú</td>
-                        <td>lees</td>
-                    </tr>
-                    <tr>
-                        <td>Él/Ella/Usted</td>
-                        <td>lee</td>
-                    </tr>
-                    <tr>
-                        <td>Nosotros/Nosotras</td>
-                        <td>leemos</td>
-                    </tr>
-                    <tr>
-                        <td>Vosotros/Vosotras</td>
-                        <td>leéis</td>
-                    </tr>
-                    <tr>
-                        <td>Ellos/Ellas/Ustedes</td>
-                        <td>leen</td>
-                    </tr>
-                </table>
+            <div class="exercise">
+                <h3>Øvelse 2: Diftongerende Verber</h3>
+                <p>For hver sætning, identificér om verbet er diftongerende, og bøj det korrekt i nutid.</p>
+                <div>
+                    <label for="exercise2-1">(pensar) Yo __________ que mañana va a llover.</label>
+                    <input type="text" id="exercise2-1" class="input" data-answer="pienso">
+                    <button onclick="checkAnswer('exercise2-1')">Tjek</button>
+                    <span id="feedback-exercise2-1"></span>
+                    <p class="translation">*(Jeg tror, det vil regne i morgen.)*</p>
+                </div>
+                <div>
+                    <label for="exercise2-2">(querer) ¿Tú __________ ir al cine conmigo esta noche?</label>
+                    <input type="text" id="exercise2-2" class="input" data-answer="quieres">
+                    <button onclick="checkAnswer('exercise2-2')">Tjek</button>
+                    <span id="feedback-exercise2-2"></span>
+                    <p class="translation">*(Vil du tage i biografen med mig i aften?)*</p>
+                </div>
+                <div>
+                    <label for="exercise2-3">(dormir) Él __________ ocho horas cada noche para estar descansado.</label>
+                    <input type="text" id="exercise2-3" class="input" data-answer="duerme">
+                    <button onclick="checkAnswer('exercise2-3')">Tjek</button>
+                    <span id="feedback-exercise2-3"></span>
+                    <p class="translation">*(Han sover otte timer hver nat for at være udhvilet.)*</p>
+                </div>
+                <div>
+                    <label for="exercise2-4">(volver) Nosotros __________ a casa después del trabajo todos los días.</label>
+                    <input type="text" id="exercise2-4" class="input" data-answer="volvemos">
+                    <button onclick="checkAnswer('exercise2-4')">Tjek</button>
+                    <span id="feedback-exercise2-4"></span>
+                    <p class="translation">*(Vi vender hjem efter arbejde hver dag.)*</p>
+                </div>
+                <div>
+                    <label for="exercise2-5">(preferir) Vosotros __________ el té en lugar del café.</label>
+                    <input type="text" id="exercise2-5" class="input" data-answer="preferís">
+                    <button onclick="checkAnswer('exercise2-5')">Tjek</button>
+                    <span id="feedback-exercise2-5"></span>
+                    <p class="translation">*(I foretrækker te fremfor kaffe.)*</p>
+                </div>
+                <div>
+                    <label for="exercise2-6">(empezar) Ellos __________ la clase a las nueve en punto.</label>
+                    <input type="text" id="exercise2-6" class="input" data-answer="empiezan">
+                    <button onclick="checkAnswer('exercise2-6')">Tjek</button>
+                    <span id="feedback-exercise2-6"></span>
+                    <p class="translation">*(De begynder klassen præcis klokken ni.)*</p>
+                </div>
+                <div>
+                    <label for="exercise2-7">(jugar) Los niños __________ al fútbol en el parque.</label>
+                    <input type="text" id="exercise2-7" class="input" data-answer="juegan">
+                    <button onclick="checkAnswer('exercise2-7')">Tjek</button>
+                    <span id="feedback-exercise2-7"></span>
+                    <p class="translation">*(Børnene spiller fodbold i parken.)*</p>
+                </div>
             </div>
 
-            <div class="verb-table">
-                <h3>-IR Verber (Eksempel: "vivir")</h3>
-                <table>
-                    <tr>
-                        <th>Person</th>
-                        <th>Bøjning</th>
-                    </tr>
-                    <tr>
-                        <td>Yo</td>
-                        <td>vivo</td>
-                    </tr>
-                    <tr>
-                        <td>Tú</td>
-                        <td>vives</td>
-                    </tr>
-                    <tr>
-                        <td>Él/Ella/Usted</td>
-                        <td>vive</td>
-                    </tr>
-                    <tr>
-                        <td>Nosotros/Nosotras</td>
-                        <td>vivimos</td>
-                    </tr>
-                    <tr>
-                        <td>Vosotros/Vosotras</td>
-                        <td>vivís</td>
-                    </tr>
-                    <tr>
-                        <td>Ellos/Ellas/Ustedes</td>
-                        <td>viven</td>
-                    </tr>
-                </table>
+            <div class="exercise">
+                <h3>Øvelse 3: Kombineret Øvelse</h3>
+                <p>Identificér hvilken verbgruppe hvert verbum tilhører, og bøj det korrekt i nutid.</p>
+                <div>
+                    <label for="exercise3-1">(comprar) Yo __________ frutas frescas en el mercado los sábados.</label>
+                    <input type="text" id="exercise3-1" class="input" data-answer="compro">
+                    <button onclick="checkAnswer('exercise3-1')">Tjek</button>
+                    <span id="feedback-exercise3-1"></span>
+                    <p class="translation">*(Jeg køber frisk frugt på markedet om lørdagen.)*</p>
+                </div>
+                <div>
+                    <label for="exercise3-2">(beber) Nosotros __________ mucha agua cuando hace calor.</label>
+                    <input type="text" id="exercise3-2" class="input" data-answer="bebemos">
+                    <button onclick="checkAnswer('exercise3-2')">Tjek</button>
+                    <span id="feedback-exercise3-2"></span>
+                    <p class="translation">*(Vi drikker meget vand, når det er varmt.)*</p>
+                </div>
+                <div>
+                    <label for="exercise3-3">(subir) Ellos __________ las escaleras hasta el tercer piso.</label>
+                    <input type="text" id="exercise3-3" class="input" data-answer="suben">
+                    <button onclick="checkAnswer('exercise3-3')">Tjek</button>
+                    <span id="feedback-exercise3-3"></span>
+                    <p class="translation">*(De går op ad trappen til tredje sal.)*</p>
+                </div>
+                <div>
+                    <label for="exercise3-4">(entender) ¿Tú __________ la lección de matemáticas de hoy?</label>
+                    <input type="text" id="exercise3-4" class="input" data-answer="entiendes">
+                    <button onclick="checkAnswer('exercise3-4')">Tjek</button>
+                    <span id="feedback-exercise3-4"></span>
+                    <p class="translation">*(Forstår du dagens matematiklektion?)*</p>
+                </div>
+                <div>
+                    <label for="exercise3-5">(sentir) Yo siempre __________ felicidad cuando veo a mis amigos.</label>
+                    <input type="text" id="exercise3-5" class="input" data-answer="siento">
+                    <button onclick="checkAnswer('exercise3-5')">Tjek</button>
+                    <span id="feedback-exercise3-5"></span>
+                    <p class="translation">*(Jeg føler altid glæde, når jeg ser mine venner.)*</p>
+                </div>
+                <div>
+                    <label for="exercise3-6">(conocer) Ella __________ a mucha gente en la ciudad.</label>
+                    <input type="text" id="exercise3-6" class="input" data-answer="conoce">
+                    <button onclick="checkAnswer('exercise3-6')">Tjek</button>
+                    <span id="feedback-exercise3-6"></span>
+                    <p class="translation">*(Hun kender mange mennesker i byen.)*</p>
+                </div>
+                <div>
+                    <label for="exercise3-7">(recibir) Nosotros __________ muchos regalos en Navidad.</label>
+                    <input type="text" id="exercise3-7" class="input" data-answer="recibimos">
+                    <button onclick="checkAnswer('exercise3-7')">Tjek</button>
+                    <span id="feedback-exercise3-7"></span>
+                    <p class="translation">*(Vi modtager mange gaver til jul.)*</p>
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div class="verb-table">
-                <h3>Diftongerende Verber</h3>
-                <table>
-                    <tr>
-                        <th>Verb</th>
-                        <th>Bøjning</th>
-                    </tr>
-                    <tr>
-                        <td>Pensar (e → ie)</td>
-                        <td>pienso, piensas, piensa, pensamos, pensáis, piensan</td>
-                    </tr>
-                    <tr>
-                        <td>Querer (e → ie)</td>
-                        <td>quiero, quieres, quiere, queremos, queréis, quieren</td>
-                    </tr>
-                    <tr>
-                        <td>Preferir (e → ie)</td>
-                        <td>prefiero, prefieres, prefiere, preferimos, preferís, prefieren</td>
-                    </tr>
-                    <tr>
-                        <td>Poder (o → ue)</td>
-                        <td>puedo, puedes, puede, podemos, podéis, pueden</td>
-                    </tr>
-                    <tr>
-                        <td>Dormir (o → ue)</td>
-                        <td>duermo, duermes, duerme, dormimos, dormís, duermen</td>
-                    </tr>
-                    <tr>
-                        <
-td>Volver (o → ue)</td>
-<td>vuelvo, vuelves, vuelve, volvemos, volvéis, vuelven</td>
-</tr>
-<tr>
-<td>Pedir (e → i)</td>
-<td>pido, pides, pide, pedimos, pedís, piden</td>
-</tr>
-<tr>
-<td>Jugar (u → ue)</td>
-<td>juego, juegas, juega, jugamos, jugáis, juegan</td>
-</tr>
-</table>
-</div>
-</section>
-    <section id="exercises">
-        <h2>Øvelser</h2>
+    <script>
+        function checkAnswer(id) {
+            const input = document.getElementById(id);
+            const feedback = document.getElementById('feedback-' + id);
+            const correctAnswer = input.getAttribute('data-answer');
 
-        <div class="exercise">
-            <h3>Øvelse 1: -AR, -ER eller -IR Verber</h3>
-            <p>For hver sætning, identificér hvilken gruppe verbet tilhører, og bøj det korrekt i nutid.</p>
-            <!-- Indsæt øvelse 1 her -->
-        </div>
-
-        <div class="exercise">
-            <h3>Øvelse 2: Diftongerende Verber</h3>
-            <p>For hver sætning, identificér om verbet er diftongerende, og bøj det korrekt i nutid.</p>
-            <!-- Indsæt øvelse 2 her -->
-        </div>
-
-        <div class="exercise">
-            <h3>Øvelse 3: Kombineret Øvelse</h3>
-            <p>Identificér hvilken verbgruppe hvert verbum tilhører, og bøj det korrekt i nutid.</p>
-            <!-- Indsæt øvelse 3 her -->
-        </div>
-    </section>
-</main>
-
-<script>
-    function checkAnswer(id) {
-        const input = document.getElementById(id);
-        const feedback = document.getElementById('feedback-' + id);
-        const correctAnswer = input.getAttribute('data-answer');
-
-        if (input.value.toLowerCase() === correctAnswer.toLowerCase()) {
-            feedback.textContent = 'Rigtigt!';
-            feedback.style.color = 'green';
-        } else {
-            feedback.textContent = 'Forkert. Prøv igen!';
-            feedback.style.color = 'red';
+            if (input.value.toLowerCase() === correctAnswer.toLowerCase()) {
+                feedback.textContent = 'Rigtigt!';
+                feedback.style.color = 'green';
+            } else {
+                feedback.textContent = 'Forkert. Prøv igen!';
+                feedback.style.color = 'red';
+            }
         }
-    }
-</script>
+        
+    </script>
+
+}
+
 </body>
 </html>
