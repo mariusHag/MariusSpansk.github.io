@@ -251,21 +251,9 @@
                 feedback.style.color = 'red';
             }
         }
+        
     </script>
-  // JavaScript - Inline in HTML
 
-function checkAnswer(id) {
-    const input = document.getElementById(id);
-    const feedback = document.getElementById('feedback-' + id);
-    const correctAnswer = input.getAttribute('data-answer');
-
-    if (input.value.toLowerCase() === correctAnswer.toLowerCase()) {
-        feedback.textContent = 'Rigtigt!';
-        feedback.style.color = 'green';
-    } else {
-        feedback.textContent = 'Forkert. Prøv igen!';
-        feedback.style.color = 'red';
-    }
 }
 
 </body>
