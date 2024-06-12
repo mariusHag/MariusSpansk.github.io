@@ -1,0 +1,76 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0.5rem 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.exercise {
+    margin-bottom: 2rem;
+}
+
+input[type="text"] {
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.feedback {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.translation {
+    font-style: italic;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+}
